@@ -32,7 +32,9 @@ fi
 # дописываем в .vimrc строчку подключения pro100-vim
 echo "
 \"подключаем pro100-vim config
-source ~/.pro100-vim/.vimrc" >> $HOME/.vimrc
+source ~/.pro100-vim/.vimrc
+source ~/.pro100-vim/.mapping
+source ~/.pro100-vim/.plugins" >> $HOME/.vimrc
 
 # вот и сказочке конец
 echo "Всё успешно завершено"
