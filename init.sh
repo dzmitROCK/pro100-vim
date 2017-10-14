@@ -20,4 +20,4 @@ fi
 
 echo "
 \"include pro100-vim config
-source $HOME/.pro100-vim/.vimrc" >> $HOME/.vimrc
+source ~/.pro100-vim/.vimrc" >> $HOME/.vimrc
