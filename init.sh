@@ -37,4 +37,5 @@ source ~/.pro100-vim/.mapping
 source ~/.pro100-vim/.plugins" >> $HOME/.vimrc
 
 # вот и сказочке конец
-echo "Всё успешно завершено"
+echo "Вуаля!"
+echo "Конфиг vim успешно установлен"
