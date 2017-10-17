@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
-" панелка внизу
 Plug 'bling/vim-airline'
+
 
 call plug#end()

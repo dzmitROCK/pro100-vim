@@ -20,6 +20,7 @@ then
         rm -rf $ULTIMATE_VIMRC
         git clone --depth=1 https://github.com/amix/vimrc.git $HOME/.vim_runtime
         sh $HOME/.vim_runtime/install_awesome_vimrc.sh
+        python $HOME/.vim_runtime/update_plugins.py
     else
         exit 1
     fi
@@ -32,9 +33,9 @@ fi
 # дописываем в .vimrc строчку подключения pro100-vim
 echo "
 \"подключаем pro100-vim config
-source ~/.pro100-vim/.vimrc
-source ~/.pro100-vim/.mapping
-source ~/.pro100-vim/.plugins" >> $HOME/.vimrc
+source ~/.pro100-vim/vimrc.vim
+source ~/.pro100-vim/mapping.vim
+source ~/.pro100-vim/plugins.vim" >> $HOME/.vimrc
 
 # вот и сказочке конец
 echo "Вуаля!"
