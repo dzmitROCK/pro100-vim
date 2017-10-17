@@ -3,6 +3,10 @@
 NAME_ULTIMATE_VIMRC="The Ultimate vimrc"
 ULTIMATE_VIMRC="$HOME/.vim_runtime"
 
+function get_install_ultimate_vim(){
+    git clone --depth=1 https://github.com/amix/vimrc.git $HOME/.vim_runtime
+    sh $HOME/.vim_runtime/install_awesome_vimrc.sh
+}
 # проверка на существование каталога The Ultimate vimrc
 if [ -d $ULTIMATE_VIMRC ]
 # если нашли то жалуемся
@@ -18,27 +22,29 @@ then
     # то удаляем папку, клонируем репозиторий и запускаем скрипт
 	then
         rm -rf $ULTIMATE_VIMRC
-        git clone --depth=1 https://github.com/amix/vimrc.git $HOME/.vim_runtime
-        sh $HOME/.vim_runtime/install_awesome_vimrc.sh
-        python $HOME/.vim_runtime/update_plugins.py
-        curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        get_install_ultimate_vim
     else
         exit 1
     fi
 # если не нашли то клонируем и запускаем
+
 else
-    git clone --depth=1 https://github.com/amix/vimrc.git $HOME/.vim_runtime
-    sh $HOME/.vim_runtime/install_awesome_vimrc.sh
+    get_install_ultimate_vim
 fi
 
 # дописываем в .vimrc строчку подключения pro100-vim
+touch ~/.vim_runtime/my_configs.vim
 echo "
 \"подключаем pro100-vim config
-source ~/.pro100-vim/vimrc.vim
-source ~/.pro100-vim/mapping.vim
-source ~/.pro100-vim/plugins.vim" >> $HOME/.vimrc
+source ~/.pro100-vim/vimrc.vim" >> $HOME/.vim_runtime/my_configs.vim
 
+# спросим про обновление плагнов
+echo "Обновить плагины?[y/n]"
+read UPDATE_PLUGINS
+if [ $UPDATE_PLUGINS = "y" ]
+then
+    python $HOME/.vim_runtime/update_plugins.py
+fi
 # вот и сказочке конец
 echo "Вуаля!"
 echo "Конфиг vim успешно установлен"
