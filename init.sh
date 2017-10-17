@@ -21,6 +21,8 @@ then
         git clone --depth=1 https://github.com/amix/vimrc.git $HOME/.vim_runtime
         sh $HOME/.vim_runtime/install_awesome_vimrc.sh
         python $HOME/.vim_runtime/update_plugins.py
+        curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     else
         exit 1
     fi

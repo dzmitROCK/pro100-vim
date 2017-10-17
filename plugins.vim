@@ -1,6 +1,6 @@
-call plug#begin('~/.vim/plugged')
+"call plug#begin('~/.vim/plugged')
 
-Plug 'bling/vim-airline'
+"Plug 'bling/vim-airline'
 
 
-call plug#end()
+"call plug#end()
