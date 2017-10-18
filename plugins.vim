@@ -9,11 +9,5 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'majutsushi/tagbar'
 " автокомплит
 Plugin 'Valloric/YouCompleteMe'
-"
 call vundle#end()    
-
-
-
-
-
 
