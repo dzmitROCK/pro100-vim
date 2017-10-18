@@ -7,6 +7,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'easymotion/vim-easymotion'
 " tagbar
 Plugin 'majutsushi/tagbar'
+" автокомплит
+Plugin 'Valloric/YouCompleteMe'
 "
 call vundle#end()    
 
