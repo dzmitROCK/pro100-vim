@@ -2,10 +2,19 @@
 
 NAME_ULTIMATE_VIMRC="The Ultimate vimrc"
 ULTIMATE_VIMRC="$HOME/.vim_runtime"
+VUNDLE_DIRECTORY="$HOME/.vim/bundle/"
 
 function get_install_ultimate_vim(){
     git clone --depth=1 https://github.com/amix/vimrc.git $HOME/.vim_runtime
     sh $HOME/.vim_runtime/install_awesome_vimrc.sh
+    echo "устанавливаем Vundle"
+    if [ -d VUNDLE_DIRECTORY ]
+    then
+        rm -rf VUNDLE_DIRECTORY
+        git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    else
+        git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    fi
 }
 # проверка на существование каталога The Ultimate vimrc
 if [ -d $ULTIMATE_VIMRC ]

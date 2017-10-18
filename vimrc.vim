@@ -16,3 +16,4 @@ colorscheme gruvbox
 
 " положение сайдбара nerdtree
 let NERDTreeWinPos = "left"
+set guifont=Devicons
