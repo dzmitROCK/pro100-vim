@@ -16,4 +16,6 @@ colorscheme gruvbox
 
 " положение сайдбара nerdtree
 let NERDTreeWinPos = "left"
-set guifont=Devicons
+" автооткрытие nerdtree при открытии вима
+autocmd vimenter * NERDTree
+
