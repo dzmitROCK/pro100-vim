@@ -1,2 +1,2 @@
 " открыть закрыть tagbar
-nmap <F8> :TagbarToggle<CR>
+nmap <leader>tt :TagbarToggle<CR>
