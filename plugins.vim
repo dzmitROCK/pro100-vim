@@ -9,5 +9,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'majutsushi/tagbar'
 " автокомплит
 Plugin 'Valloric/YouCompleteMe'
+" автокомплит python
+Plugin 'davidhalter/jedi-vim'
 call vundle#end()    
 
