@@ -15,5 +15,7 @@ Plugin 'Valloric/YouCompleteMe'
 "
 " автокомплит python
 Plugin 'davidhalter/jedi-vim'
+" emmet
+Plugin 'mattn/emmet-vim'
 call vundle#end()    
 

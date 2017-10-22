@@ -17,5 +17,10 @@ colorscheme gruvbox
 " положение сайдбара nerdtree
 let NERDTreeWinPos = "left"
 " автооткрытие nerdtree при открытии вима
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
+
+" emmet 
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
 
