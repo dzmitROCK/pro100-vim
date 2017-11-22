@@ -4,4 +4,3 @@
 * <code>./init.sh</code>  
 
 * Для того чтобы работал tagbar надо чтоб был установлен <code>ctags</code>
-* Чтобы отображались иконки надо установить <code>nerd-fonts</code>
