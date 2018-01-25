@@ -20,3 +20,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'mattn/emmet-vim'
 call vundle#end()    
 
+" php
+Plugin 'stanangeloff/php.vim'
+Plugin 'shawncplus/phpcomplete.vim'
+
