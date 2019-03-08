@@ -5,4 +5,3 @@
 * <code>cd ~/.vim/bundle/YouCompleteMe</code>  
 * <code>./install.py</code>  
 
-Для того чтобы работал tagbar надо чтоб был установлен <code>ctags</code>
