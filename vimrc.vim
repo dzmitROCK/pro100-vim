@@ -12,7 +12,7 @@ set number
 set mouse=a
 
 " включаем цветовую тему gruvbox
-colorscheme gruvbox
+"colorscheme gruvbox
 
 " положение сайдбара nerdtree
 let NERDTreeWinPos = "left"
