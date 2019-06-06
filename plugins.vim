@@ -23,4 +23,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'stanangeloff/php.vim'
 Plugin 'shawncplus/phpcomplete.vim'
 
+" wordpress
+Plugin 'dsawardekar/wordpress.vim'
+
 call vundle#end()    
